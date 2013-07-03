@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Git Extensions : Git Extensions is a shell extension, a Visual Studio 2008/2010/2012 plugin and a standalone Git repository tool." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Git Extensions</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gitextensions/gitextensions">View on GitHub</a>
+
+          <h1 id="project_title">Git Extensions</h1>
+          <h2 id="project_tagline">Git Extensions is a shell extension, a Visual Studio 2008/2010/2012 plugin and a standalone Git repository tool.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/gitextensions/gitextensions/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/gitextensions/gitextensions/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="git-extensions" class="anchor" href="#git-extensions"><span class="octicon octicon-link"></span></a>Git Extensions</h1>
+
+<h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>GitExtensions is a shell extension, a Visual Studio 2005 / 2008 / 2010 / 2012 plugin and a standalone Git repository tool.</p>
+
+<h2>
+<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links</h2>
+
+<ul>
+<li>Download page: <a href="https://sourceforge.net/projects/gitextensions/">https://sourceforge.net/projects/gitextensions/</a>
+</li>
+<li>Online manual: <a href="https://git-extensions-documentation.readthedocs.org/en/latest/">https://git-extensions-documentation.readthedocs.org/en/latest/</a>
+</li>
+<li>Issue tracker: <a href="http://github.com/gitextensions/gitextensions/issues">http://github.com/gitextensions/gitextensions/issues</a>
+</li>
+<li>Mailing list: <a href="http://groups.google.com/group/gitextensions">http://groups.google.com/group/gitextensions</a>
+</li>
+<li>ChangeLog: <a href="GitUI/Resources/ChangeLog.md">ChangeLog.md</a>
+</li>
+<li>Source code: <a href="http://github.com/gitextensions/gitextensions">http://github.com/gitextensions/gitextensions</a>
+</li>
+<li>Wiki: <a href="https://github.com/gitextensions/gitextensions/wiki">https://github.com/gitextensions/gitextensions/wiki</a>
+</li>
+</ul><h2>
+<a name="how-to-debug-gitextensions" class="anchor" href="#how-to-debug-gitextensions"><span class="octicon octicon-link"></span></a>How to debug GitExtensions</h2>
+
+<p>The installer is build using WiX. You need to install WiX when you want to build the installer. This can be downloaded here: <a href="http://wixtoolset.org/">http://wixtoolset.org/</a>. If you do not want to build the installer, just open the solution and ignore the warning.</p>
+
+<ul>
+<li>Open the solution file (GitExtensions.VS2010.sln or GitExtensions.VS2012.sln)</li>
+<li>Hit F5 to compile and run GitExtensions</li>
+</ul><h2>
+<a name="how-to-contribute-code" class="anchor" href="#how-to-contribute-code"><span class="octicon octicon-link"></span></a>How to contribute code</h2>
+
+<ul>
+<li>Login in github (you need an account)</li>
+<li>Fork the main repository from <a href="http://github.com/gitextensions/gitextensions">github</a>
+</li>
+<li>Read <a href="https://github.com/gitextensions/gitextensions/wiki#coding-guide">Coding guide</a>
+</li>
+<li>Push your changes to your fork</li>
+<li>Send me a pull request</li>
+</ul><p>If you do not want to use github, I also accept mailed patches. Just make sure the patch is send as an attachement and not in the body of the mail.</p>
+
+<h2>
+<a name="how-to-create-the-installer" class="anchor" href="#how-to-create-the-installer"><span class="octicon octicon-link"></span></a>How to create the installer</h2>
+
+<ul>
+<li>Download and install WiX <a href="http://wixtoolset.org/">http://wixtoolset.org/</a>
+</li>
+<li>Run Setup\BuildInstallers.bat to build the installers</li>
+</ul><h2>
+<a name="installing-nuget-in-monodevelopxamarin-studio" class="anchor" href="#installing-nuget-in-monodevelopxamarin-studio"><span class="octicon octicon-link"></span></a>Installing Nuget in Monodevelop/Xamarin Studio</h2>
+
+<p>Following steps will add nuget package management capabilities to your monoDevelop/Xamarin Studio. Installing nuget requires at least Monodevelop version 3.0.5.</p>
+
+<p>OBS: Monodevelop 4.0 is Xamarin Studio</p>
+
+<ul>
+<li>On monoDevelop find Add-In manager (macOS is on program main menu, other OS's under tools)</li>
+<li>over the gallery tab, select "Manage repositories..." from the "Repositories" drop-down menu</li>
+<li>For monodevelop 3.0.5, add a new URL <a href="http://mrward.github.com/monodevelop-nuget-addin-repository/3.0.5/main.mrep">http://mrward.github.com/monodevelop-nuget-addin-repository/3.0.5/main.mrep</a> otherwise, if using Xamarin Studio use <a href="http://mrward.github.com/monodevelop-nuget-addin-repository/4.0/main.mrep">http://mrward.github.com/monodevelop-nuget-addin-repository/4.0/main.mrep</a>
+</li>
+<li>A new IDE extension option will appear, select the nuget package management</li>
+<li>To add nuget packages or maintain it, you right click either on the solution or in the references</li>
+</ul><p>On monoDevelop preferences, you will find a new "Nuget" option. Check the box that says "Enable package restore".</p>
+
+<p>If by any reason your xbuild is not downloading and installing the packages, manually run the following command to get all the missing packages. Make sure you run it at the top level directory of your solution, like the example below:</p>
+
+<pre><code>gitextensions  (master)$ .nuget/Nuget.sh 
+Successfully installed 'NBug 1.1.1'.
+Successfully installed 'NUnit.Mocks 2.6.2'.
+Successfully installed 'NUnit 2.6.2'.
+Successfully installed 'Rx-Main 2.1.30214.0'.
+Successfully installed 'Rx-Core 2.1.30214.0'.
+Successfully installed 'Rx-Interfaces 2.1.30214.0'.
+Successfully installed 'Rx-PlatformServices 2.1.30214.0'.
+Successfully installed 'Rx-Linq 2.1.30214.0'.
+Successfully installed 'Newtonsoft.Json 4.5.11'.
+Successfully installed 'RestSharp 104.1'.
+Successfully installed 'NBug 1.1.1'.
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Git Extensions maintained by <a href="https://github.com/gitextensions">gitextensions</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42203769-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
